@@ -8,7 +8,6 @@ import { html } from 'commonmark-helpers';
 import numbers from 'typographic-numbers';
 import numd from 'numd';
 import { pipe, prop, head, splitEvery } from 'ramda';
-// import sequence from 'run-sequence';
 import renderTweet from 'tweet.md';
 import autoprefixer from 'autoprefixer';
 import pcssImport from 'postcss-import';
@@ -25,12 +24,12 @@ import postcss from 'gulp-postcss';
 
 import articleData from 'article-data';
 import getStats from './stats.js';
-import { site } from './package.json';
 import webpackConfig from './webpack.config.babel.js';
 
 import authorRender from './helpers/author-render';
 import bust from './helpers/bust';
 import lastUpdated from './helpers/last-updated';
+import { site, underhood } from './underhood'
 
 import authors from './dump';
 const latestInfo = head(authors).info;
@@ -43,6 +42,7 @@ const jadeDefaults = {
   locals: {
     site,
     latestInfo,
+    underhoodName: underhood,
     numbers: input => numbers(input, { locale: 'ru' }),
     people: numd('человек', 'человека', 'человек'),
   },
@@ -242,10 +242,10 @@ task('html', series('stats', 'authors', 'index', 'map', 'about', 'authoring', 'i
 task('build', series( 'css', 'js', 'static', 'stats', 'html', 'userpics', 'banners', 'current-media'));
 
 task('watch', parallel('server', 'build', () => {
-  watch(['**/*.jade'], () => start('html'));
-  watch(['css/**/*.css'], () => start('css'));
-  watch('js/**/*.js', () => start('js'));
-  watch('static/**', () => start('static'));
+  watch(['**/*.jade'], series('html'));
+  watch(['css/**/*.css'], series('css'));
+  watch('js/**/*.js', series('js'));
+  watch('static/**', series('static'));
 }));
 
 task('default', series('clean', 'watch'));

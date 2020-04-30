@@ -16,20 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/suxxes/abroadunderhood.git"
   },
-  "site": {
-    "title": "abroadunderhood",
-    "description": "Коллективный твиттер-аккаунт для тех, кто хочет уехать за границу, от тех, кто уехал, с новым автором каждую неделю",
-    "site_url": "https://abroadunderhood.ru/",
-    "managingEditor": "iamstarkov@gmail.com (Vladimir Starkov)",
-    "webMaster": "iamstarkov@gmail.com (Vladimir Starkov)",
-    "copyright": "MIT",
-    "language": "en-us",
-    "categories": [
-      "frontend",
-      "css",
-      "twitter"
-    ]
-  },
   "author": "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com/)",
   "license": "MIT",
   "bugs": {

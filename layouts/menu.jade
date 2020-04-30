@@ -8,12 +8,12 @@
         span.icon-bar
       a.navbar-brand.visible-xs(href="/")
         span.text-muted @
-        b abroadunderhood
+        b= underhoodName
     .navbar-collapse.collapse#navbar-collapse
       .row
         ul.nav.navbar-nav
           li
-            a.btn.btn-success(href="https://twitter.com/abroadunderhood")
+            a.btn.btn-success(href="https://twitter.com/"+underhoodName)
               b Подписаться
           li
             a(href="/stats/") Статистика
@@ -23,9 +23,9 @@
             a(href="/about/") О проекте
           li
             a(href="/authoring/") Стать автором
-          li.hidden-sm
+          //li.hidden-sm
             a(href="https://github.com/suxxes/abroadunderhood") GitHub
-          li.hidden-sm
+          //li.hidden-sm
             a(href="https://google.com/?q=site:abroadunderhood.ru+что-нибудь") Поиск
-          li.hidden-sm
+          //li.hidden-sm
             a(href="https://github.com/iamstarkov/awesome-collective-twitters") Похожие проекты
