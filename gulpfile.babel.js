@@ -8,14 +8,14 @@ import { html } from 'commonmark-helpers';
 import numbers from 'typographic-numbers';
 import numd from 'numd';
 import { pipe, prop, head, splitEvery } from 'ramda';
-import sequence from 'run-sequence';
+// import sequence from 'run-sequence';
 import renderTweet from 'tweet.md';
 import autoprefixer from 'autoprefixer';
 import pcssImport from 'postcss-import';
 import pcssInitial from 'postcss-initial';
 import webpack from 'webpack';
 
-import gulp, { dest, src, start as _start, task as _task } from 'gulp';
+import gulp, { dest, src, start, task, series, parallel } from 'gulp';
 import gulpJade from 'gulp-jade';
 import rename from 'gulp-rename';
 import watch from 'gulp-watch';
@@ -35,8 +35,8 @@ import lastUpdated from './helpers/last-updated';
 import authors from './dump';
 const latestInfo = head(authors).info;
 
-const start = _start.bind(gulp);
-const task = _task.bind(gulp);
+//const start = _start.bind(gulp);
+//const task = _task.bind(gulp);
 
 const jadeDefaults = {
   pretty: true,
@@ -60,7 +60,17 @@ const render = pipe(renderTweet, html);
 /**
  * MAIN TASKS
  */
-task('index', ['css'], () => {
+
+task('css', () =>
+  src('css/styles.css')
+    .pipe(postcss([
+      pcssImport,
+      pcssInitial,
+      autoprefixer,
+    ]))
+    .pipe(dest('dist/css')));
+
+task('index', series('css', () => {
   const authorsToPost = authors.filter(author => author.post !== false);
   return src('layouts/index.jade')
     .pipe(jade({
@@ -74,9 +84,9 @@ task('index', ['css'], () => {
     }))
     .pipe(rename({ basename: 'index' }))
     .pipe(dest('dist'));
-});
+}));
 
-task('stats', ['css'], () => {
+task('stats', series('css', () => {
   const currentAuthor = head(authors.filter(author => author.post === false));
   return src('layouts/stats.jade')
     .pipe(jade({
@@ -93,9 +103,9 @@ task('stats', ['css'], () => {
     .pipe(rename({ dirname: 'stats' }))
     .pipe(rename({ basename: 'index' }))
     .pipe(dest('dist'));
-});
+}));
 
-task('about', ['css'], () => {
+task('about', series('css', () => {
   const readme = fs.readFileSync('./pages/about.md', { encoding: 'utf8' });
   const article = articleData(readme, 'D MMMM YYYY', 'en'); // TODO change to 'ru' after moment/moment#2634 will be published
   return src('layouts/article.jade')
@@ -109,9 +119,9 @@ task('about', ['css'], () => {
     .pipe(rename({ dirname: 'about' }))
     .pipe(rename({ basename: 'index' }))
     .pipe(dest('dist'));
-});
+}));
 
-task('authoring', ['css'], () => {
+task('authoring', series('css', () => {
   const readme = fs.readFileSync('./pages/authoring.md', { encoding: 'utf8' });
   const article = articleData(readme, 'D MMMM YYYY', 'en'); // TODO change to 'ru' after moment/moment#2634 will be published
   return src('layouts/article.jade')
@@ -125,9 +135,9 @@ task('authoring', ['css'], () => {
     .pipe(rename({ dirname: 'authoring' }))
     .pipe(rename({ basename: 'index' }))
     .pipe(dest('dist'));
-});
+}));
 
-task('instruction', ['css'], () => {
+task('instruction', series('css', () => {
   const readme = fs.readFileSync('./pages/instruction.md', { encoding: 'utf8' });
   const article = articleData(readme, 'D MMMM YYYY', 'en'); // TODO change to 'ru' after moment/moment#2634 will be published
   return src('layouts/article.jade')
@@ -141,9 +151,9 @@ task('instruction', ['css'], () => {
     .pipe(rename({ dirname: 'instruction' }))
     .pipe(rename({ basename: 'index' }))
     .pipe(dest('dist'));
-});
+}));
 
-task('map', ['css'], () => {
+task('map', series('css', () => {
   const currentAuthor = head(authors.filter(author => author.post === false));
   const authorsToPost = authors.filter(author => author.post !== false);
   return src('layouts/map.jade')
@@ -160,9 +170,9 @@ task('map', ['css'], () => {
     .pipe(rename({ dirname: 'map' }))
     .pipe(rename({ basename: 'index' }))
     .pipe(dest('dist'));
-});
+}));
 
-task('authors', ['css'], done => {
+task('authors', series('css', done => {
   const authorsToPost = authors.filter(author => author.post !== false);
   each(authorsToPost, author => {
     return src('./layouts/author.jade')
@@ -178,7 +188,7 @@ task('authors', ['css'], done => {
       .pipe(rename({ basename: 'index' }))
       .pipe(dest('dist'));
   }, done);
-});
+}));
 
 task('userpics', () =>
   src('dump/images/*-image*')
@@ -200,16 +210,7 @@ task('current-banner', () =>
     .pipe(rename('current-banner'))
     .pipe(dest('dist/images')));
 
-task('current-media', ['current-userpic', 'current-banner']);
-
-task('css', () =>
-  src('css/styles.css')
-    .pipe(postcss([
-      pcssImport,
-      pcssInitial,
-      autoprefixer,
-    ]))
-    .pipe(dest('dist/css')));
+task('current-media', series('current-userpic', 'current-banner'));
 
 task('js', done => {
   webpack(webpackConfig, (err, stats) => {
@@ -237,17 +238,17 @@ task('server', () => {
  */
 task('clean', done => rimraf('dist', done));
 
-task('html', ['stats', 'authors', 'index', 'map', 'about', 'authoring', 'instruction']);
-task('build', done => sequence( 'css', 'js', 'static', 'stats', 'html', 'userpics', 'banners', 'current-media', done));
+task('html', series('stats', 'authors', 'index', 'map', 'about', 'authoring', 'instruction'));
+task('build', series( 'css', 'js', 'static', 'stats', 'html', 'userpics', 'banners', 'current-media'));
 
-task('default', done => sequence('clean', 'watch', done));
-
-task('watch', ['server', 'build'], () => {
+task('watch', parallel('server', 'build', () => {
   watch(['**/*.jade'], () => start('html'));
   watch(['css/**/*.css'], () => start('css'));
   watch('js/**/*.js', () => start('js'));
   watch('static/**', () => start('static'));
-});
+}));
 
-task('deploy', ['build'], done =>
+task('default', series('clean', 'watch'));
+
+task('deploy', gulp.series('build'), done =>
   buildbranch({ branch: 'gh-pages', folder: 'dist' }, done));
