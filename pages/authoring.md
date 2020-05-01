@@ -41,7 +41,7 @@
 
 ## Как стать автором?
 
-— [Напишите письмо {{curatorTwitter}}][proposal], если хотите вести твиттер одну неделю или
+— [Напишите в твиттер {{curatorTwitter}}][jsh], если хотите вести твиттер одну неделю или
 если хотите предложить кого-то на место автора
 
 ## Этикет
@@ -50,8 +50,6 @@
 или унижать кого-то. Ведите себя профессионально. Уничижительные, сексистские,
 расистские или ксенофобские шутки не привествуются в [@{{underhoodName}}][jsh]
 
-Если вы заметили нарушение, как можно скорее напишите письмо [{{curatorTwitter}}][coc-violations].
+Если вы заметили нарушение, как можно скорее напишите [{{curatorTwitter}}][jsh].
 
 [jsh]: https://twitter.com/{{underhoodName}}
-[proposal]: mailto:unno@{{underhoodName}}.ru?subject=Author’s%20proposal%20for%20@{{underhoodName}}
-[coc-violations]: mailto:unno@{{underhoodName}}.ru?subject=CoC%20violations%20in%20@{{underhoodName}}
