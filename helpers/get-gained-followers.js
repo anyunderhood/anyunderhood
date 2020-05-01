@@ -1,5 +1,5 @@
 import getAuthorArea from './get-author-area';
-import authors from '../authors';
+import authors from './rendered-authors';
 import R from 'ramda';
 
 const prev = authorId => (authors[R.inc(R.findIndex(R.propEq('authorId', authorId), authors))] || {}).authorId;

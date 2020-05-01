@@ -1,5 +1,5 @@
 import getAuthorArea from './get-author-area';
-import authors from '../authors';
+import authors from './rendered-authors';
 import R from 'ramda';
 import diff from 'lodash.difference';
 
