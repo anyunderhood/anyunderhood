@@ -5,3 +5,5 @@ dist
 dump/images/original/
 dump/images/*.tmp.*
 *.tmp*
+
+.vscode/

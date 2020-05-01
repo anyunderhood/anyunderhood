@@ -18,8 +18,8 @@
 * Легко общаться с автором, потому что это двухсторонний канал связи
 * Это весело
 
-Подписывайтесь на [@abroadunderhood][jsh] в твиттере.
+Подписывайтесь на [@{{underhoodName}}][jsh] в твиттере.
 
 PS. Есть и другие похожие проекты. Их список хранится на гитхабе в репозитории [awesome-collective-twitters](https://github.com/iamstarkov/awesome-collective-twitters)
 
-[jsh]: https://twitter.com/abroadunderhood
+[jsh]: https://twitter.com/{{underhoodName}}
