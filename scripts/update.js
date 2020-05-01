@@ -1,4 +1,4 @@
-import log from '../helpers/log';
+
 import { outputFile } from 'fs-extra';
 import { isEmpty, concat, reverse, last, dissoc, map, head } from 'ramda';
 import moment from 'moment';
@@ -88,7 +88,7 @@ const update = () => {
   });
 
   outputFile('./dump/.timestamp', moment().unix(), err => {
-    log(`${err ? '✗' : '✓'} timestamp`);
+    console.log(`${err ? '✗' : '✓'} timestamp`);
   });
 }
 
