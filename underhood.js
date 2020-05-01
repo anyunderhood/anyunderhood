@@ -3,6 +3,8 @@ const site = "mobileunderhood.ru"
 
 const description = "Коллективный твиттер-аккаунт для мобильных разработчиков с новым автором каждую неделю"
 
+const author = "igrekde@gmail.com (Egor Tolstoy)"
+
 module.exports = {
   "underhood": name,
   "underhoodDesc": description,
@@ -12,7 +14,7 @@ module.exports = {
   "curatorEmail": "igrekde@gmail.com",
   "curatorTwitter": "igrekde",
   "creatorTwitter": "igrekde",
-  "creatorCreds": "igrekde@gmail.com (Egor Tolstoy)",
+  "creatorCreds": author,
   "googleAnalytics": "",
   "yandexMetric": "",
   "site": {
