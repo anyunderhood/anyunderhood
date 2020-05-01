@@ -1,8 +1,8 @@
 import save from './save';
 import profileMedia from 'twitter-profile-media';
 
-const saveMedia = (tokens, abroadunderhood, username, cb) => {
-  profileMedia(tokens, abroadunderhood, (err, { image: imageURL, banner: bannerURL }) => {
+const saveMedia = (tokens, underhood, username, cb) => {
+  profileMedia(tokens, underhood, (err, { image: imageURL, banner: bannerURL }) => {
     if (err) return cb(err);
     save(imageURL, `./images/${username}-image`, (err, image) => {
       if (err) return cb(err);

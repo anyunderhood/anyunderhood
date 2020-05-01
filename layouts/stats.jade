@@ -9,7 +9,7 @@ block meta
 
 block headerTitle
   span.hidden-xs
-    a(href="/") abroadunderhood
+    a(href="/")= underhoodName
     br.visible-sm
     small.hidden-sm &nbsp;&middot;&nbsp;
   small Статистика
@@ -54,7 +54,7 @@ block content
               tr.host-stats__row
                 td.host-stats__col.host-stats__col_left.col__author(data-title='Автор' data-sort=index)
                   span.cell
-                    - var authorLink = (isLive) ? 'https://twitter.com/abroadunderhood' : '/' + author.username;
+                    - var authorLink = (isLive) ? 'https://twitter.com/' + underhoodName : '/' + author.username;
                     .text-ellipsis
                       a(href=authorLink class={ live: isLive })
                         = "@" + author.username
