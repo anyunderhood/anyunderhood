@@ -23,7 +23,7 @@ import jimp from 'gulp-jimp';
 import postcss from 'gulp-postcss';
 
 import articleData from 'article-data';
-import getStats from './stats.js';
+import getStats from './helpers/stats.js';
 import webpackConfig from './webpack.config.babel.js';
 
 import authorRender from './helpers/author-render';
@@ -189,7 +189,7 @@ task('authors', series('css', done => {
 
 task('userpics', () =>
   src('dump/images/*-image*')
-    .pipe(jimp({ resize: { width: 192, height: 192 }}))
+    .pipe(jimp({ resize: { width: 192, height: 192 } }))
     .pipe(dest('dist/images')));
 
 task('banners', () =>
@@ -198,7 +198,7 @@ task('banners', () =>
 
 task('current-userpic', () =>
   src(`dump/images/${head(authors).username}-image*`)
-    .pipe(jimp({ resize: { width: 192, height: 192 }}))
+    .pipe(jimp({ resize: { width: 192, height: 192 } }))
     .pipe(rename('current-image'))
     .pipe(dest('dist/images')));
 
@@ -236,7 +236,7 @@ task('server', () => {
 task('clean', done => rimraf('dist', done));
 
 task('html', series('stats', 'authors', 'index', 'map', 'about', 'authoring', 'instruction'));
-task('build', series( 'css', 'js', 'static', 'stats', 'html', 'userpics', 'banners', 'current-media'));
+task('build', series('css', 'js', 'static', 'stats', 'html', 'userpics', 'banners', 'current-media'));
 
 task('watch', parallel('server', 'build', () => {
   watch(['**/*.jade'], series('html'));

@@ -1,8 +1,8 @@
 import stats from 'tweets-stats';
 import maxValues from 'max-values';
 import { merge } from 'ramda';
-import getGainedFollowers from './helpers/get-gained-followers';
-import getDiffFollowers from './helpers/get-diff-followers';
+import getGainedFollowers from './get-gained-followers';
+import getDiffFollowers from './get-diff-followers';
 
 function getStatsPerAuthor(authors) {
   return authors
