@@ -34,9 +34,6 @@ import { site, underhood } from './underhood'
 import authors from './dump';
 const latestInfo = head(authors).info;
 
-//const start = _start.bind(gulp);
-//const task = _task.bind(gulp);
-
 const jadeDefaults = {
   pretty: true,
   locals: {
