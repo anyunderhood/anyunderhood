@@ -1,4 +1,3 @@
-
 import { outputFile } from 'fs-extra';
 import { isEmpty, concat, reverse, last } from 'ramda';
 import moment from 'moment';
@@ -19,38 +18,44 @@ import saveAuthorArea from '../../helpers/save-author-area';
 
 /// Updates one author
 const update = (author, maxId) => {
-  const { username, first } = author;
+  const { authorId, first } = author;
 
-  ensureFilesForFirstUpdate(username);
+  ensureFilesForFirstUpdate(authorId);
 
-  const tweets = getAuthorArea(username, 'tweets').tweets || [];
+  const tweets = getAuthorArea(authorId, 'tweets').tweets || [];
 
   const tweetsSinceId = isEmpty(tweets) ? dec(first) : last(tweets).id_str;
   const tweetsMaxId = maxId && dec(maxId);
-  getTweets(tokens, underhood, tweetsSinceId, tweetsMaxId, (err, newTweetsRaw) => {
-    if (err) throw err;
-    const concattedTweets = concat(tweets, reverse(newTweetsRaw));
-    saveAuthorArea(username, 'tweets', { tweets: concattedTweets });
-  });
+  getTweets(
+    tokens,
+    underhood,
+    tweetsSinceId,
+    tweetsMaxId,
+    (err, newTweetsRaw) => {
+      if (err) throw err;
+      const concattedTweets = concat(tweets, reverse(newTweetsRaw));
+      saveAuthorArea(authorId, 'tweets', { tweets: concattedTweets });
+    }
+  );
 
   getInfo(tokens, underhood).then(info => {
     saveAuthorArea(authorId, 'info', info);
   });
 
-  rm(`./dump/images/${username}*`);
-  saveMedia(tokens, underhood, username, (err, media) => {
+  rm(`./dump/images/${authorId}*`);
+  saveMedia(tokens, underhood, authorId, (err, media) => {
     if (err) throw err;
-    saveAuthorArea(username, 'media', media);
+    saveAuthorArea(authorId, 'media', media);
   });
 
   getFollowers(tokens, underhood, (err, followersIds) => {
     if (err) throw err;
-    saveAuthorArea(username, 'followers', { followersIds });
+    saveAuthorArea(authorId, 'followers', { followersIds });
   });
 
-  outputFile('./dump/.timestamp', moment().unix(), err => {
+  outputFile('./dump/.timestamp', moment().unix(), (err) => {
     console.log(`${err ? '✗' : '✓'} timestamp`);
   });
-}
+};
 
 export default update;
