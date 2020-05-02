@@ -43,15 +43,18 @@ const authors = authorId([
 
 function run() {
   authors.forEach(author => {
-    './../../dump-old'
-    let content = readJsonSync(`./../../dump-old/${author.username}-followers.json`);
-    const fixed = {
-      followersIds: content.followers.map(user => user.id_str)
-    }
+    try {
+      let content = readJsonSync(`./dump-old/${author.username}-followers.json`);
+      const fixed = {
+        followersIds: content.followers.map(user => user.id_str)
+      }
 
-    outputJSON(`./../../dump-new/${author.sername}-followers.json`, fixed, { spaces: 2 }, err => {
-      console.log(`${err ? '✗' : '✓'} ${username}’s ${area}`);
-    });
+      outputJSON(`./dump-old/${author.username}-followers.json`, fixed, { spaces: 2 }, err => {
+        console.log(`${err ? '✗' : '✓'} ${author.username}’`);
+      });
+    } catch (err) {
+      console.log(err)
+    }
   });
 }
 
