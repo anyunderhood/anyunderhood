@@ -71,7 +71,7 @@ const index = () => {
   return gulp.src('layouts/index.jade')
     .pipe(jade({
       locals: {
-        title: `Сайт @${site.title}`,
+        title: site.title,
         desc: site.description,
         currentAuthor: head(authors),
         authors: authorsToPost,
