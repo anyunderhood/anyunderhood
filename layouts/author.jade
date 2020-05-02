@@ -13,7 +13,7 @@ block headerTitle
 
 block content
   .author-page
-    .author-wrapper(style="background-image: url(" + author.media.banner.replace('./', '/') + ");")
+    .author-wrapper(style=!author.media.banner ? "background: #ffefba; background: -webkit-linear-gradient(to bottom, #ffffff, #ffefba);background: linear-gradient(to bottom, #ffffff, #ffefba);" : "background-image: url(" + author.media.banner.replace('./', '/') + ");")
       span.container
         span.author
           span.author__userpic(style="background-image: url(" + author.media.image.replace('./', '/') + ");")
