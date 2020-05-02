@@ -1,5 +1,5 @@
 import authors from '../authors';
-import { accessSync, access } from 'fs';
+import { accessSync } from 'fs';
 import areas from './areas';
 
 const renderedAuthors = authors.filter(author => {
