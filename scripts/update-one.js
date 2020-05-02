@@ -1,6 +1,6 @@
 
 import { outputFile } from 'fs-extra';
-import { isEmpty, concat, reverse, last, dissoc, map, head } from 'ramda';
+import { isEmpty, concat, reverse, last } from 'ramda';
 import moment from 'moment';
 import dec from 'bignum-dec';
 import { sync as rm } from 'rimraf';
@@ -12,7 +12,7 @@ import tokens from 'twitter-tokens';
 import getTweets from '../helpers/get-tweets';
 import getInfo from 'get-twitter-info';
 import saveMedia from '../helpers/save-media';
-import getFollowers from 'get-twitter-followers';
+import getFollowers from '../helpers/get-followers';
 import twitterMentions from 'twitter-mentions';
 
 import ensureFilesForFirstUpdate from '../helpers/ensure-author-files';
@@ -73,10 +73,9 @@ const update = (author) => {
     saveAuthorArea(username, 'media', media);
   });
 
-  getFollowers(tokens, underhood, (err, followersWithStatuses) => {
+  getFollowers(tokens, underhood, (err, followersIds) => {
     if (err) throw err;
-    const followers = map(dissoc('status'), followersWithStatuses);
-    saveAuthorArea(username, 'followers', { followers });
+    saveAuthorArea(username, 'followers', { followersIds });
   });
 
   const mentionsSinceId = isEmpty(mentions) ? first : last(mentions).id_str;
