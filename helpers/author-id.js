@@ -10,8 +10,8 @@ const reduceAuthorId = (acc, author) => {
   const authorId = times > 0 ? `${username}-${R.inc(times)}` : username;
 
   return R.prepend(R.assoc('authorId', authorId, author), acc);
-}
+};
 
-/// Repeated author will have suffix -2,-3,-4 for new appearances on twitter.
+/// Repeated authors will have authorId with suffix -2,-3,-4 for new appearances on twitter.
 // authorId :: [a] -> [b]
 export default R.reduceRight(reduceAuthorId, []);

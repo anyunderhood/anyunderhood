@@ -28,7 +28,7 @@ block content
 
   each author in authors
     article.author-list-item
-      a.author-wrapper(href="/" + author.username + '/' style=!author.media.banner ? "background: #ffefba; background: -webkit-linear-gradient(to bottom, #ffffff, #ffefba);background: linear-gradient(to bottom, #ffffff, #ffefba);" : "background-image: url(" + author.media.banner.replace('./', '/') + ");")
+      a.author-wrapper(href="/" + author.authorId + '/' style=!author.media.banner ? "background: #ffefba; background: -webkit-linear-gradient(to bottom, #ffffff, #ffefba);background: linear-gradient(to bottom, #ffffff, #ffefba);" : "background-image: url(" + author.media.banner.replace('./', '/') + ");")
         span.container
           span.author
             span.author__userpic(style="background-image: url(" + author.media.image + ");")

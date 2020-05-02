@@ -181,7 +181,7 @@ const authorsArchives = (done) => {
             },
           })
         )
-        .pipe(rename({ dirname: author.username }))
+        .pipe(rename({ dirname: author.authorId }))
         .pipe(rename({ basename: 'index' }))
         .pipe(gulp.dest('dist'));
     },
@@ -200,14 +200,14 @@ const banners = () =>
 
 const currentUserpic = () =>
   gulp
-    .src(`dump/images/${head(authors).username}-image*`)
+    .src(`dump/images/${head(authors).authorId}-image*`)
     .pipe(jimp({ '': { resize: { width: 192, height: 192 } } }))
     .pipe(rename('current-image'))
     .pipe(gulp.dest('dist/images'));
 
 const currentBanner = () =>
   gulp
-    .src(`dump/images/${head(authors).username}-banner*`)
+    .src(`dump/images/${head(authors).authorId}-banner*`)
     .pipe(rename('current-banner'))
     .pipe(gulp.dest('dist/images'));
 

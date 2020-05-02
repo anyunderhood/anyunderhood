@@ -19,9 +19,10 @@ const getQuotedUser = pipe(
   path(['entities', 'urls']),
   map(prop('expanded_url')),
   map(replace('/mobile.twitter.com/', '/twitter.com/')),
-  filter(url => parse(url).host === 'twitter.com'),
+  filter((url) => parse(url).host === 'twitter.com'),
   head,
-  pipe(parse, prop('path'), split('/'), nth(1)));
+  pipe(parse, prop('path'), split('/'), nth(1))
+);
 
 moment.locale('ru');
 
@@ -29,7 +30,7 @@ const weekday = date => moment.utc(new Date(date)).format('dddd');
 const tweetLink = (tweet) => `https://twitter.com/${underhood}/status/${tweet.id_str}`;
 const tweetTime = (tweet) => moment.utc(new Date(tweet.created_at)).format('H:mm');
 
-const authorsToPost = filter(author => author.post !== false, authors);
+const authorsToPost = filter((author) => author.post !== false, authors);
 
 const authorIndex = author => findIndex(propEq('authorId', author.authorId))(authorsToPost);
 const isFirstAuthor = author => authorIndex(author) === dec(length(authorsToPost));
@@ -37,8 +38,9 @@ const isLastAuthor = author => author.authorId === prop('authorId', head(authors
 const nextAuthor = author => {
   if (!isLastAuthor(author)) return nth(dec(authorIndex(author)), authorsToPost);
 };
-const prevAuthor = author => {
-  if (!isFirstAuthor(author)) return nth(inc(authorIndex(author)), authorsToPost);
+const prevAuthor = (author) => {
+  if (!isFirstAuthor(author))
+    return nth(inc(authorIndex(author)), authorsToPost);
 };
 
 const d = input => moment.utc(new Date(input)).format('D MMMM YYYY')
@@ -51,11 +53,13 @@ const fullText = item => {
   item.text = item.full_text || item.text;
 
   if (item.quoted_status) {
-    item.quoted_status.text = item.quoted_status.full_text || item.quoted_status.text;
+    item.quoted_status.text =
+      item.quoted_status.full_text || item.quoted_status.text;
   }
 
   if (item.retweeted_status) {
-    item.retweeted_status.text = item.retweeted_status.full_text || item.retweeted_status.text;
+    item.retweeted_status.text =
+      item.retweeted_status.full_text || item.retweeted_status.text;
   }
 
   return item;
@@ -67,14 +71,20 @@ const prepareTweets = tweets => {
 
   return ungroupInto('weekday', 'tweets')(tweets);
 };
-const renderVideo = url => {
-  var regexp = /http(?:s)?:\/\/(?:(www|m)\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?[\w\?​=]*)?/ig;
+const renderVideo = (url) => {
+  var regexp = /http(?:s)?:\/\/(?:(www|m)\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?[\w\?​=]*)?/gi;
   var matches = regexp.exec(url);
 
   if (matches) {
-    return '<p class="embed-responsive embed-responsive-16by9"><iframe src="//www.youtube.com/embed/' + matches[2] + '" width="720" height="' + (720 * (9 / 16)) + '" class="embed-responsive-item"></iframe></p>';
+    return (
+      '<p class="embed-responsive embed-responsive-16by9"><iframe src="//www.youtube.com/embed/' +
+      matches[2] +
+      '" width="720" height="' +
+      720 * (9 / 16) +
+      '" class="embed-responsive-item"></iframe></p>'
+    );
   }
-}
+};
 
 export default {
   d,
@@ -84,7 +94,8 @@ export default {
   tweetsUnit,
   getQuotedUser,
   unidecode,
-  prevAuthor, nextAuthor,
+  prevAuthor,
+  nextAuthor,
   render: pipe(renderTweet, html, trimTag),
   renderVideo,
   tweetTime, tweetLink,
