@@ -258,23 +258,14 @@ const server = () => {
  * FLOW
  */
 const htmlPages = gulp.series(
-  css,
-  gulp.parallel(
-    stats,
-    authorsArchives,
-    index,
-    map,
-    about,
-    forAuthors,
-    instruction
-  )
+  stats,
+  gulp.parallel(authorsArchives, index, map, about, forAuthors, instruction)
 );
 
 const build = gulp.series(
   css,
   js,
   staticPages,
-  stats,
   htmlPages,
   userpics,
   banners,
@@ -282,7 +273,7 @@ const build = gulp.series(
 );
 
 const watchers = () => {
-  gulp.watch(['**/*.jade'], htmlPages);
+  gulp.watch(['**/*.jade'], gulp.series(css, htmlPages));
   gulp.watch(['css/**/*.css'], css);
   gulp.watch('js/**/*.js', js);
   gulp.watch('static/**', staticPages);
