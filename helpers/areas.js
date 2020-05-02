@@ -1,1 +1,1 @@
-export default ['info', 'tweets', 'media', 'mentions'];
+export default ['info', 'tweets', 'media'];

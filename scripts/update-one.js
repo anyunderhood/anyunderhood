@@ -13,7 +13,6 @@ import getTweets from '../helpers/get-tweets';
 import getInfo from 'get-twitter-info';
 import saveMedia from '../helpers/save-media';
 import getFollowers from '../helpers/get-followers';
-import twitterMentions from 'twitter-mentions';
 
 import ensureFilesForFirstUpdate from '../helpers/ensure-author-files';
 import getAuthorArea from '../helpers/get-author-area';
@@ -26,7 +25,6 @@ const update = (author, maxId) => {
   ensureFilesForFirstUpdate(username);
 
   const tweets = getAuthorArea(username, 'tweets').tweets || [];
-  const mentions = getAuthorArea(username, 'mentions').mentions || [];
 
   const tweetsSinceId = isEmpty(tweets) ? dec(first) : last(tweets).id_str;
   const tweetsMaxId = maxId && dec(maxId);
@@ -77,13 +75,6 @@ const update = (author, maxId) => {
   getFollowers(tokens, underhood, (err, followersIds) => {
     if (err) throw err;
     saveAuthorArea(username, 'followers', { followersIds });
-  });
-
-  const mentionsSinceId = isEmpty(mentions) ? first : last(mentions).id_str;
-  twitterMentions(tokens, mentionsSinceId, (err, newMentionsRaw) => {
-    if (err) throw err;
-    const concattedMentions = concat(mentions, reverse(newMentionsRaw));
-    saveAuthorArea(username, 'mentions', { mentions: concattedMentions });
   });
 
   outputFile('./dump/.timestamp', moment().unix(), err => {
