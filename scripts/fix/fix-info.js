@@ -2,7 +2,7 @@ import fixer from "./fixer";
 import { merge } from "ramda";
 
 
-fixer('info', 'dump-old', 'dump-old',
+fixer('info', 'dump-old', 'dump',
   (content) =>
     merge(
       content,
