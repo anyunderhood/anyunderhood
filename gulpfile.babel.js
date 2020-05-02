@@ -287,8 +287,8 @@ exports.clean = clean;
 
 exports.build = build;
 
-exports.deploy = gulp.series(build, () =>
-  buildbranch({ branch: 'gh-pages', folder: 'dist' })
+exports.deploy = gulp.series(build, (done) =>
+  buildbranch({ branch: 'gh-pages', folder: 'dist' }, done)
 );
 
 exports.default = gulp.series(clean, watch);
