@@ -214,7 +214,7 @@ const authorsArchives = (done) => {
 const userpics = () =>
   gulp
     .src('dump/images/*-image*')
-    .pipe(jimp({ resize: { width: 192, height: 192 } }))
+    .pipe(jimp({ '': { resize: { width: 192, height: 192 } } }))
     .pipe(gulp.dest('dist/images'));
 
 const banners = () =>
@@ -223,7 +223,7 @@ const banners = () =>
 const currentUserpic = () =>
   gulp
     .src(`dump/images/${head(authors).username}-image*`)
-    .pipe(jimp({ resize: { width: 192, height: 192 } }))
+    .pipe(jimp({ '': { resize: { width: 192, height: 192 } } }))
     .pipe(rename('current-image'))
     .pipe(gulp.dest('dist/images'));
 
