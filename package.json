@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "update": "babel-node scripts/update",
-    "fixFw": "babel-node scripts/fix/fix-followers",
-    "fixI": "babel-node scripts/fix/fix-info",
-    "fixT": "babel-node scripts/fix/fix-tweets",
+    "migrate": "babel-node scripts/migrate",
     "deploy": "gulp deploy",
     "deploy:ci": "npm-run-all git-setup:ci update save deploy",
     "build": "gulp build",

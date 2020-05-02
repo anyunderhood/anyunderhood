@@ -1,6 +1,5 @@
-import fixer from "./fixer";
+import fixer from "./migrator";
 import { merge } from "ramda";
-
 
 fixer('info', 'dump-old', 'dump-old',
   (content) =>

@@ -6,17 +6,17 @@ import dec from 'bignum-dec';
 import { sync as rm } from 'rimraf';
 import got from 'got';
 
-import { underhood } from '../underhood.js';
+import { underhood } from '../../underhood.js';
 
 import tokens from 'twitter-tokens';
-import getTweets from '../helpers/get-tweets';
+import getTweets from '../../helpers/get-tweets';
 import getInfo from 'get-twitter-info';
-import saveMedia from '../helpers/save-media';
-import getFollowers from '../helpers/get-followers';
+import saveMedia from '../../helpers/save-media';
+import getFollowers from '../../helpers/get-followers';
 
-import ensureFilesForFirstUpdate from '../helpers/ensure-author-files';
-import getAuthorArea from '../helpers/get-author-area';
-import saveAuthorArea from '../helpers/save-author-area';
+import ensureFilesForFirstUpdate from '../../helpers/ensure-author-files';
+import getAuthorArea from '../../helpers/get-author-area';
+import saveAuthorArea from '../../helpers/save-author-area';
 
 /// Updates one author
 const update = (author, maxId) => {

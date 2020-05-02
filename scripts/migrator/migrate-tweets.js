@@ -1,6 +1,4 @@
-import fixer from "./fixer";
-import { merge } from "ramda";
-
+import fixer from "./migrator";
 
 fixer('tweets', 'dump-old', 'dump-old',
   content => content
