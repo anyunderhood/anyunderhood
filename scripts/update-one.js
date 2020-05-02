@@ -20,7 +20,7 @@ import getAuthorArea from '../helpers/get-author-area';
 import saveAuthorArea from '../helpers/save-author-area';
 
 /// Updates one author
-const update = (author) => {
+const update = (author, maxId) => {
   const { username, first } = author;
 
   ensureFilesForFirstUpdate(username);
@@ -29,7 +29,8 @@ const update = (author) => {
   const mentions = getAuthorArea(username, 'mentions').mentions || [];
 
   const tweetsSinceId = isEmpty(tweets) ? dec(first) : last(tweets).id_str;
-  getTweets(tokens, underhood, tweetsSinceId, (err, newTweetsRaw) => {
+  const tweetsMaxId = maxId && dec(maxId);
+  getTweets(tokens, underhood, tweetsSinceId, tweetsMaxId, (err, newTweetsRaw) => {
     if (err) throw err;
     const concattedTweets = concat(tweets, reverse(newTweetsRaw));
     saveAuthorArea(username, 'tweets', { tweets: concattedTweets });

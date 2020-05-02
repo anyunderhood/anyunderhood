@@ -17,18 +17,27 @@ const getNextOptions = (options, tweets) =>
 
 function accumulate(get, options, tweets, cb) {
   const nextOptions = getNextOptions(options, tweets);
+
+  if (nextOptions.max_id === nextOptions.since_id) {
+    cb(null, tweets);
+    return;
+  }
+
   get(nextOptions, (err, res) => {
-    if (err) return cb(err);
+    if (err) {
+      return cb(err);
+    }
     const accumulatedTweets = concat(tweets, res);
+
     return (isEmpty(res))
       ? cb(null, accumulatedTweets)
       : accumulate(get, nextOptions, accumulatedTweets, cb);
   });
 }
 
-export default function getTweets(tokens, username, sinceId, cb) {
+export default function getTweets(tokens, username, sinceId, maxId, cb) {
   const client = new Twitter(tokens);
   const get = client.get.bind(client, 'statuses/user_timeline');
-  const options = merge(defaults, { screen_name: username, since_id: sinceId });
+  const options = merge(merge(defaults, { screen_name: username, since_id: sinceId }), maxId && { max_id: maxId });
   return accumulate(get, options, [], cb);
 };
