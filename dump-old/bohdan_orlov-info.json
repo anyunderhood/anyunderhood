@@ -118,5 +118,10 @@
   "following": false,
   "follow_request_sent": false,
   "notifications": false,
-  "translator_type": "none"
+  "translator_type": "none",
+  "time_zone_offset": 0,
+  "geometry": {
+    "lat": 0,
+    "lng": 0
+  }
 }
