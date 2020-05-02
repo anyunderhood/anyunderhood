@@ -8385,6 +8385,758 @@
       "favorited": false,
       "retweeted": false,
       "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:18:53 +0000 2020",
+      "id": 1256498379820920800,
+      "id_str": "1256498379820920832",
+      "full_text": "Всем утра субботы и начала выходных!\nДень 6. Последний, короткий\nТред",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        69
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 2,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:18:53 +0000 2020",
+      "id": 1256498380487839700,
+      "id_str": "1256498380487839745",
+      "full_text": "2010 - 2020 - десять лет уместились в 5 тредов, конечно не все, возможно не то, о чем часть подписчиков хотела бы читать, но я пытался быть откровенным и непредвзятым (насколько это вообще возможно относительно себя). Если кому-то было интересно, для меня это уже успех.",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        270
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": 1256498379820920800,
+      "in_reply_to_status_id_str": "1256498379820920832",
+      "in_reply_to_user_id": 1056195982340358100,
+      "in_reply_to_user_id_str": "1056195982340358150",
+      "in_reply_to_screen_name": "mobileunderhood",
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:18:53 +0000 2020",
+      "id": 1256498381205069800,
+      "id_str": "1256498381205069824",
+      "full_text": "Спасибо @igredke за приглашение! Для меня это был хороший заряд лайками и ретвитами!",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        84
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": 1256498380487839700,
+      "in_reply_to_status_id_str": "1256498380487839745",
+      "in_reply_to_user_id": 1056195982340358100,
+      "in_reply_to_user_id_str": "1056195982340358150",
+      "in_reply_to_screen_name": "mobileunderhood",
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:18:53 +0000 2020",
+      "id": 1256498381859377200,
+      "id_str": "1256498381859377152",
+      "full_text": "Be yourself (Lyft), be authentic yourself (Facebook) - плакаты на стене, но если их поддерживают люди,разработчики,менеджеры, это может стать сильным инструментом преодоления проблем,осознания сильных сторон,достижения своих целей и это уже становится больше,чем интересная работа",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        280
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": 1256498381205069800,
+      "in_reply_to_status_id_str": "1256498381205069824",
+      "in_reply_to_user_id": 1056195982340358100,
+      "in_reply_to_user_id_str": "1056195982340358150",
+      "in_reply_to_screen_name": "mobileunderhood",
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:18:53 +0000 2020",
+      "id": 1256498382547193900,
+      "id_str": "1256498382547193858",
+      "full_text": "Мне повезло оказаться там, где я сейчас. И последняя неделя показала, как много путей НЕ вело сюда. Судьба, настроение, ситуация, обстоятельства, все повлияло на решения человека, который привык контролировать, чтобы Unit тест проходил, когда должен и не проходил, когда не должен",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        280
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": 1256498381859377200,
+      "in_reply_to_status_id_str": "1256498381859377152",
+      "in_reply_to_user_id": 1056195982340358100,
+      "in_reply_to_user_id_str": "1056195982340358150",
+      "in_reply_to_screen_name": "mobileunderhood",
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:18:53 +0000 2020",
+      "id": 1256498383272853500,
+      "id_str": "1256498383272853504",
+      "full_text": "Ну и как сегодня модно в Кремниевой долине - ОТВЕТ ДУДЮ: Миллионы не зарабатываем, но все более, чем хорошо! Хватает и океана под боком: https://t.co/JAS75eQVL4",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        136
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 1256498089919082500,
+            "id_str": "1256498089919082498",
+            "indices": [
+              137,
+              160
+            ],
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1256498089919082498/pu/img/oOlijBj1REu7XJeM.jpg",
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1256498089919082498/pu/img/oOlijBj1REu7XJeM.jpg",
+            "url": "https://t.co/JAS75eQVL4",
+            "display_url": "pic.twitter.com/JAS75eQVL4",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1256498383272853504/video/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 675,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 383,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 1280,
+                "h": 720,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 1256498089919082500,
+            "id_str": "1256498089919082498",
+            "indices": [
+              137,
+              160
+            ],
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1256498089919082498/pu/img/oOlijBj1REu7XJeM.jpg",
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1256498089919082498/pu/img/oOlijBj1REu7XJeM.jpg",
+            "url": "https://t.co/JAS75eQVL4",
+            "display_url": "pic.twitter.com/JAS75eQVL4",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1256498383272853504/video/1",
+            "type": "video",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 675,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 383,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 1280,
+                "h": 720,
+                "resize": "fit"
+              }
+            },
+            "video_info": {
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration_millis": 14648,
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/ext_tw_video/1256498089919082498/pu/pl/PN-Ntmeuhnj2BDFh.m3u8?tag=10"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/1256498089919082498/pu/vid/480x270/x0YcpsJrKjGy2AgD.mp4?tag=10"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/1256498089919082498/pu/vid/640x360/M5kMM7RhxuMZIb5x.mp4?tag=10"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/1256498089919082498/pu/vid/1280x720/J1Oxd1dLXYq-GILV.mp4?tag=10"
+                }
+              ]
+            },
+            "additional_media_info": {
+              "monetizable": false
+            }
+          }
+        ]
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": 1256498382547193900,
+      "in_reply_to_status_id_str": "1256498382547193858",
+      "in_reply_to_user_id": 1056195982340358100,
+      "in_reply_to_user_id_str": "1056195982340358150",
+      "in_reply_to_screen_name": "mobileunderhood",
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:18:54 +0000 2020",
+      "id": 1256498384703123500,
+      "id_str": "1256498384703123456",
+      "full_text": "Спасибо, что в пути со мной были родные и любимые! Особенно моей жене, @OlyaTsoy8, самой красивой, неотразимой и мудрой женщине в моей жизни 😘! https://t.co/niQFSvYUn2",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        143
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "OlyaTsoy8",
+            "name": "OlyaTsoy",
+            "id": 1254267667348775000,
+            "id_str": "1254267667348774912",
+            "indices": [
+              71,
+              81
+            ]
+          }
+        ],
+        "urls": [],
+        "media": [
+          {
+            "id": 1256498176845992000,
+            "id_str": "1256498176845991936",
+            "indices": [
+              144,
+              167
+            ],
+            "media_url": "http://pbs.twimg.com/media/EW_6b0PU0AAHY7J.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/EW_6b0PU0AAHY7J.jpg",
+            "url": "https://t.co/niQFSvYUn2",
+            "display_url": "pic.twitter.com/niQFSvYUn2",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1256498384703123456/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 453,
+                "h": 680,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1365,
+                "h": 2048,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 800,
+                "h": 1200,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 1256498176845992000,
+            "id_str": "1256498176845991936",
+            "indices": [
+              144,
+              167
+            ],
+            "media_url": "http://pbs.twimg.com/media/EW_6b0PU0AAHY7J.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/EW_6b0PU0AAHY7J.jpg",
+            "url": "https://t.co/niQFSvYUn2",
+            "display_url": "pic.twitter.com/niQFSvYUn2",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1256498384703123456/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 453,
+                "h": 680,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1365,
+                "h": 2048,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 800,
+                "h": 1200,
+                "resize": "fit"
+              }
+            }
+          },
+          {
+            "id": 1256498260623016000,
+            "id_str": "1256498260623015938",
+            "indices": [
+              144,
+              167
+            ],
+            "media_url": "http://pbs.twimg.com/media/EW_6gsVUwAIhMjB.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/EW_6gsVUwAIhMjB.jpg",
+            "url": "https://t.co/niQFSvYUn2",
+            "display_url": "pic.twitter.com/niQFSvYUn2",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1256498384703123456/photo/1",
+            "type": "photo",
+            "sizes": {
+              "medium": {
+                "w": 800,
+                "h": 1200,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1365,
+                "h": 2048,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 453,
+                "h": 680,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": 1256498383272853500,
+      "in_reply_to_status_id_str": "1256498383272853504",
+      "in_reply_to_user_id": 1056195982340358100,
+      "in_reply_to_user_id_str": "1056195982340358150",
+      "in_reply_to_screen_name": "mobileunderhood",
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 3,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:18:54 +0000 2020",
+      "id": 1256498387383275500,
+      "id_str": "1256498387383275520",
+      "full_text": "Пора заканчивать церемонию “Оскар”. \n\nОгромное Спасибо Всем кто читал!\n\nВсем хороших выходных! Stay safe!",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        105
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": 1256498384703123500,
+      "in_reply_to_status_id_str": "1256498384703123456",
+      "in_reply_to_user_id": 1056195982340358100,
+      "in_reply_to_user_id_str": "1056195982340358150",
+      "in_reply_to_screen_name": "mobileunderhood",
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 7,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:33:58 +0000 2020",
+      "id": 1256502177712836600,
+      "id_str": "1256502177712836610",
+      "full_text": "2010-2020 за неделю. \nИстория мобильного разработчика (от Android в Oculus).\n\nДень 1. Путь в Android. \nhttps://t.co/C1mE6ylver\nДень 2. Путь на восток\nhttps://t.co/g1N5wwGFU5\nДень 3. Нерусский русский\nhttps://t.co/TxXvc1bgMu\n👇👇👇",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        227
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/C1mE6ylver",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1254686179833769986",
+            "display_url": "twitter.com/mobileunderhoo…",
+            "indices": [
+              103,
+              126
+            ]
+          },
+          {
+            "url": "https://t.co/g1N5wwGFU5",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1255034956817920000",
+            "display_url": "twitter.com/mobileunderhoo…",
+            "indices": [
+              150,
+              173
+            ]
+          },
+          {
+            "url": "https://t.co/TxXvc1bgMu",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1255406870090653697",
+            "display_url": "twitter.com/mobileunderhoo…",
+            "indices": [
+              200,
+              223
+            ]
+          }
+        ]
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": true,
+      "quoted_status_id": 1255406870090653700,
+      "quoted_status_id_str": "1255406870090653697",
+      "quoted_status_permalink": {
+        "url": "https://t.co/TxXvc1bgMu",
+        "expanded": "https://twitter.com/mobileunderhood/status/1255406870090653697",
+        "display": "twitter.com/mobileunderhoo…"
+      },
+      "quoted_status": {
+        "created_at": "Wed Apr 29 08:01:36 +0000 2020",
+        "id": 1255406870090653700,
+        "id_str": "1255406870090653697",
+        "full_text": "Всем 안녕하세요! Словарный запас иссякает.  Проходим Middle point.\nДень 3. Нерусский русский\nТред",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          92
+        ],
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": []
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1056195982340358100,
+          "id_str": "1056195982340358150"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 8,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "ru"
+      },
+      "retweet_count": 0,
+      "favorite_count": 1,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "ru"
+    },
+    {
+      "created_at": "Sat May 02 08:33:58 +0000 2020",
+      "id": 1256502178899845000,
+      "id_str": "1256502178899845121",
+      "full_text": "День 4. Can can lah!\nhttps://t.co/MwVTggcDi8\nДень 5. Реальная реальность\nhttps://t.co/HgzW2izZqK\nДень 6. Последний, короткий https://t.co/tY4QbgHsnU\n🙌",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        150
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/MwVTggcDi8",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1255798578821251072",
+            "display_url": "twitter.com/mobileunderhoo…",
+            "indices": [
+              21,
+              44
+            ]
+          },
+          {
+            "url": "https://t.co/HgzW2izZqK",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1256150594173022211",
+            "display_url": "twitter.com/mobileunderhoo…",
+            "indices": [
+              73,
+              96
+            ]
+          },
+          {
+            "url": "https://t.co/tY4QbgHsnU",
+            "expanded_url": "https://twitter.com/mobileunderhood/status/1256498379820920832",
+            "display_url": "twitter.com/mobileunderhoo…",
+            "indices": [
+              125,
+              148
+            ]
+          }
+        ]
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": 1256502177712836600,
+      "in_reply_to_status_id_str": "1256502177712836610",
+      "in_reply_to_user_id": 1056195982340358100,
+      "in_reply_to_user_id_str": "1056195982340358150",
+      "in_reply_to_screen_name": "mobileunderhood",
+      "user": {
+        "id": 1056195982340358100,
+        "id_str": "1056195982340358150"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": true,
+      "quoted_status_id": 1256498379820920800,
+      "quoted_status_id_str": "1256498379820920832",
+      "quoted_status_permalink": {
+        "url": "https://t.co/tY4QbgHsnU",
+        "expanded": "https://twitter.com/mobileunderhood/status/1256498379820920832",
+        "display": "twitter.com/mobileunderhoo…"
+      },
+      "quoted_status": {
+        "created_at": "Sat May 02 08:18:53 +0000 2020",
+        "id": 1256498379820920800,
+        "id_str": "1256498379820920832",
+        "full_text": "Всем утра субботы и начала выходных!\nДень 6. Последний, короткий\nТред",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          69
+        ],
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": []
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1056195982340358100,
+          "id_str": "1056195982340358150"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 2,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "ru"
+      },
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "ru"
     }
   ]
 }
