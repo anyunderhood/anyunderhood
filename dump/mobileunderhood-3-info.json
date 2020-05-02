@@ -14,10 +14,7 @@
           "url": "https://t.co/np5yyKi7zD",
           "expanded_url": "http://mobileunderhood.ru",
           "display_url": "mobileunderhood.ru",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,10 +49,7 @@
           "url": "https://t.co/3ViNNw7n8x",
           "expanded_url": "https://twitter.com/i/web/status/1217711334466445312",
           "display_url": "twitter.com/i/web/status/1…",
-          "indices": [
-            116,
-            139
-          ]
+          "indices": [116, 139]
         }
       ]
     },
@@ -99,5 +93,10 @@
   "following": false,
   "follow_request_sent": false,
   "notifications": false,
-  "translator_type": "none"
+  "translator_type": "none",
+  "time_zone_offset": 0,
+  "geometry": {
+    "lat": 0,
+    "lng": 0
+  }
 }

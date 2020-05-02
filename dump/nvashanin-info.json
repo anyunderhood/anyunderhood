@@ -39,10 +39,7 @@
           "url": "https://t.co/Y0zhKTN9pJ",
           "expanded_url": "https://twitter.com/i/web/status/1092164474495295488",
           "display_url": "twitter.com/i/web/status/1…",
-          "indices": [
-            117,
-            140
-          ]
+          "indices": [117, 140]
         }
       ]
     },
@@ -84,5 +81,10 @@
   "following": false,
   "follow_request_sent": false,
   "notifications": false,
-  "translator_type": "none"
+  "translator_type": "none",
+  "time_zone_offset": 0,
+  "geometry": {
+    "lat": 0,
+    "lng": 0
+  }
 }

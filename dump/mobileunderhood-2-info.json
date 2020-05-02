@@ -14,10 +14,7 @@
           "url": "https://t.co/np5yyKi7zD",
           "expanded_url": "http://mobileunderhood.ru",
           "display_url": "mobileunderhood.ru",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -27,10 +24,7 @@
           "url": "https://t.co/ZP0VoEP94O",
           "expanded_url": "http://skyduck.app",
           "display_url": "skyduck.app",
-          "indices": [
-            14,
-            37
-          ]
+          "indices": [14, 37]
         }
       ]
     }
@@ -62,10 +56,7 @@
           "url": "https://t.co/6RyApOBRAa",
           "expanded_url": "https://twitter.com/i/web/status/1173549235675049985",
           "display_url": "twitter.com/i/web/status/1…",
-          "indices": [
-            117,
-            140
-          ]
+          "indices": [117, 140]
         }
       ]
     },
@@ -107,5 +98,10 @@
   "following": false,
   "follow_request_sent": false,
   "notifications": false,
-  "translator_type": "none"
+  "translator_type": "none",
+  "time_zone_offset": 0,
+  "geometry": {
+    "lat": 0,
+    "lng": 0
+  }
 }
