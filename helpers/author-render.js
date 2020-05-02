@@ -11,7 +11,7 @@ import unidecode from 'unidecode';
 import trimTag from 'trim-html-tag';
 import { parse } from 'url';
 import { underhood } from '../underhood.js';
-import authors from '../dump';
+import authors from './input-authors';
 
 const getQuotedUser = pipe(
   path(['entities', 'urls']),

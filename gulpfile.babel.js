@@ -30,7 +30,7 @@ import lastUpdated from './helpers/last-updated';
 import { site, underhood } from './underhood';
 import replaceMd from './helpers/replaceMd';
 
-import authors from './dump';
+import authors from './helpers/input-authors';
 const latestInfo = head(authors).info;
 
 const jadeDefaults = {

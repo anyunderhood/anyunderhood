@@ -3,7 +3,7 @@ import { readFileSync } from 'fs-extra';
 import cheerio from 'cheerio';
 import typeNumbers from 'typographic-numbers';
 import { head } from 'ramda';
-import authors from './dump';
+import authors from './helpers/input-authors';
 
 const latestInfo = head(authors).info;
 const numbers = input => typeNumbers(input, { locale: 'ru' });
@@ -44,7 +44,7 @@ describe('about page', () => {
 
 describe('archive pages', () => {
   it('tweets list', () => {
-    authors.forEach(function(author) {
+    authors.forEach(function (author) {
       if (author.post === false) return;
       const $ = make$(`dist/${author.username}/index.html`);
       assert($('.tweets .tweet').length > 1);
