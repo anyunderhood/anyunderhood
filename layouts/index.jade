@@ -31,7 +31,7 @@ block content
       a.author-wrapper(href="/" + author.authorId + '/' style=!author.media.banner ? "background: #ffefba; background: -webkit-linear-gradient(to bottom, #ffffff, #ffefba);background: linear-gradient(to bottom, #ffffff, #ffefba);" : "background-image: url(" + author.media.banner.replace('./', '/') + ");")
         span.container
           span.author
-            span.author__userpic(style="background-image: url(" + author.media.image + ");")
+            span.author__userpic(style=style=author.media.image ? "background-image: url(" + author.media.image.replace('./', '/') + ");" : "background: #0F2027; background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027); background: linear-gradient(to top, #2C5364, #203A43, #0F2027);")
             span.author__info
               span.author__headline.small
                 = helpers.authorRender.d(author.tweets[0].created_at)
