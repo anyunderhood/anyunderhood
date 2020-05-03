@@ -1,7 +1,9 @@
 import moment from 'moment';
-import { pipe, filter, groupBy, prop, converge, inc, dec, length,
+import {
+  pipe, filter, groupBy, prop, converge, inc, dec, length,
   findIndex, propEq, path, map, head, split, nth, replace, toUpper, tail,
-  concat } from 'ramda';
+  concat
+} from 'ramda';
 import numd from 'numd';
 import renderTweet from 'tweet.md';
 import getLinks from './get-links';
@@ -10,7 +12,7 @@ import ungroupInto from './ungroup-into';
 import unidecode from 'unidecode';
 import trimTag from 'trim-html-tag';
 import { parse } from 'url';
-import { underhood } from '../underhood.js';
+import { underhood } from '../underhood';
 import authors from './input-authors';
 
 const getQuotedUser = pipe(
@@ -23,15 +25,15 @@ const getQuotedUser = pipe(
 
 moment.locale('ru');
 
-const weekday = (date, offset) => (moment(new Date(date)).utcOffset(offset)).format('dddd');
+const weekday = date => moment.utc(new Date(date)).format('dddd');
 const tweetLink = (tweet) => `https://twitter.com/${underhood}/status/${tweet.id_str}`;
-const tweetTime = (tweet, offset) => (moment(new Date(tweet.created_at)).utcOffset(offset)).format('H:mm');
+const tweetTime = (tweet) => moment.utc(new Date(tweet.created_at)).format('H:mm');
 
 const authorsToPost = filter(author => author.post !== false, authors);
 
-const authorIndex = author => findIndex(propEq('username', author.username))(authorsToPost);
+const authorIndex = author => findIndex(propEq('authorId', author.authorId))(authorsToPost);
 const isFirstAuthor = author => authorIndex(author) === dec(length(authorsToPost));
-const isLastAuthor = author => author.username === prop('username', head(authorsToPost));
+const isLastAuthor = author => author.authorId === prop('authorId', head(authorsToPost));
 const nextAuthor = author => {
   if (!isLastAuthor(author)) return nth(dec(authorIndex(author)), authorsToPost);
 };
@@ -39,10 +41,11 @@ const prevAuthor = author => {
   if (!isFirstAuthor(author)) return nth(inc(authorIndex(author)), authorsToPost);
 };
 
-const d = (input, offset) => (moment(input).utcOffset(offset)).format('D MMMM YYYY');
-const gd = (input, offset) => (moment(input).utcOffset(offset)).format('YYYY-MM-DD');
+const d = input => moment.utc(new Date(input)).format('D MMMM YYYY')
+const gd = input => moment.utc(new Date(input)).format('YYYY-MM-DD');
 const tweetsUnit = numd('твит', 'твита', 'твитов');
 const capitalize = converge(concat, [pipe(head, toUpper), tail]);
+
 const filterTimeline = item => (item.text[0] !== '@') || (item.text.indexOf(`@${underhood}`) === 0);
 const fullText = item => {
   item.text = item.full_text || item.text;
@@ -57,10 +60,10 @@ const fullText = item => {
 
   return item;
 };
-const prepareTweets = (tweets, offset) => {
+const prepareTweets = tweets => {
   tweets = map(fullText, tweets);
   tweets = filter(filterTimeline, tweets);
-  tweets = groupBy(item => gd(item.created_at, offset), tweets);
+  tweets = groupBy(item => gd(item.created_at), tweets);
 
   return ungroupInto('weekday', 'tweets')(tweets);
 };
@@ -83,7 +86,7 @@ export default {
   unidecode,
   prevAuthor, nextAuthor,
   render: pipe(renderTweet, html, trimTag),
-  renderVideo: renderVideo,
+  renderVideo,
   tweetTime, tweetLink,
   getLinks,
 };
