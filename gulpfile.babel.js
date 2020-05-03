@@ -164,28 +164,6 @@ const instruction = () => {
     .pipe(gulp.dest('dist'));
 };
 
-const map = () => {
-  const currentAuthor = head(authors.filter((author) => author.post === false));
-  const authorsToPost = authors.filter((author) => author.post !== false);
-  return gulp
-    .src('layouts/map.jade')
-    .pipe(
-      jade({
-        locals: {
-          title: `Карта @${site.title}`,
-          url: 'map/',
-          desc: site.description,
-          currentAuthor: currentAuthor,
-          authors: authorsToPost,
-          helpers: { bust },
-        },
-      })
-    )
-    .pipe(rename({ dirname: 'map' }))
-    .pipe(rename({ basename: 'index' }))
-    .pipe(gulp.dest('dist'));
-};
-
 const authorsArchives = (done) => {
   const authorsToPost = authors.filter((author) => author.post !== false);
   each(
@@ -259,7 +237,7 @@ const server = () => {
  */
 const htmlPages = gulp.series(
   stats,
-  gulp.parallel(authorsArchives, index, map, about, forAuthors, instruction)
+  gulp.parallel(authorsArchives, index, about, forAuthors, instruction)
 );
 
 const build = gulp.series(
