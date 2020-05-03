@@ -14,10 +14,7 @@
           "url": "https://t.co/Ck1zFjm9fx",
           "expanded_url": "http://vk.com/ao",
           "display_url": "vk.com/ao",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,20 +49,14 @@
           "name": "Ivan Vavilov",
           "id": 1084344147144859600,
           "id_str": "1084344147144859648",
-          "indices": [
-            0,
-            14
-          ]
+          "indices": [0, 14]
         },
         {
           "screen_name": "mobileunderhood",
           "name": "Мобильный разработчик",
           "id": 1056195982340358100,
           "id_str": "1056195982340358150",
-          "indices": [
-            15,
-            31
-          ]
+          "indices": [15, 31]
         }
       ],
       "urls": []
@@ -109,7 +100,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

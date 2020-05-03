@@ -14,10 +14,7 @@
           "url": "https://t.co/Aaw0EEGhFi",
           "expanded_url": "http://arch.guru",
           "display_url": "arch.guru",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,30 +49,21 @@
           "name": "Anton Petrakov",
           "id": 2446846140,
           "id_str": "2446846140",
-          "indices": [
-            0,
-            16
-          ]
+          "indices": [0, 16]
         },
         {
           "screen_name": "mobileunderhood",
           "name": "Мобильный разработчик",
           "id": 1056195982340358100,
           "id_str": "1056195982340358150",
-          "indices": [
-            17,
-            33
-          ]
+          "indices": [17, 33]
         },
         {
           "screen_name": "igrekde",
           "name": "Egor Tolstoy",
           "id": 181697598,
           "id_str": "181697598",
-          "indices": [
-            34,
-            42
-          ]
+          "indices": [34, 42]
         }
       ],
       "urls": []
@@ -119,7 +107,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

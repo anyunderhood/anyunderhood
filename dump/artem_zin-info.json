@@ -14,10 +14,7 @@
           "url": "https://t.co/XXuAKuCfye",
           "expanded_url": "http://artemzin.com",
           "display_url": "artemzin.com",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,10 +49,7 @@
           "name": "Mark Allison",
           "id": 17707156,
           "id_str": "17707156",
-          "indices": [
-            3,
-            16
-          ]
+          "indices": [3, 16]
         }
       ],
       "urls": []
@@ -85,10 +79,7 @@
             "url": "https://t.co/WNKF0LB88m",
             "expanded_url": "https://twitter.com/i/web/status/1169898150942801921",
             "display_url": "twitter.com/i/web/status/1…",
-            "indices": [
-              117,
-              140
-            ]
+            "indices": [117, 140]
           }
         ]
       },
@@ -139,7 +130,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

@@ -14,10 +14,7 @@
           "url": "https://t.co/KNzIQKgT7q",
           "expanded_url": "http://github.com/iamironz",
           "display_url": "github.com/iamironz",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -27,10 +24,7 @@
           "url": "https://t.co/pPyID927cJ",
           "expanded_url": "http://androiddev.apptractor.ru",
           "display_url": "androiddev.apptractor.ru",
-          "indices": [
-            95,
-            118
-          ]
+          "indices": [95, 118]
         }
       ]
     }
@@ -62,40 +56,28 @@
           "name": "Екатерина Петрова",
           "id": 384935401,
           "id_str": "384935401",
-          "indices": [
-            0,
-            15
-          ]
+          "indices": [0, 15]
         },
         {
           "screen_name": "nifl_heim",
           "name": "Michael Chernov",
           "id": 239279875,
           "id_str": "239279875",
-          "indices": [
-            16,
-            26
-          ]
+          "indices": [16, 26]
         },
         {
           "screen_name": "katellaevgenii",
           "name": "Evgeniy Katella",
           "id": 2900094743,
           "id_str": "2900094743",
-          "indices": [
-            27,
-            42
-          ]
+          "indices": [27, 42]
         },
         {
           "screen_name": "igrekde",
           "name": "Egor Tolstoy",
           "id": 181697598,
           "id_str": "181697598",
-          "indices": [
-            43,
-            51
-          ]
+          "indices": [43, 51]
         }
       ],
       "urls": []
@@ -139,7 +121,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "regular",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

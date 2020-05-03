@@ -39,10 +39,7 @@
           "name": "Afrin",
           "id": 118808773,
           "id_str": "118808773",
-          "indices": [
-            0,
-            10
-          ]
+          "indices": [0, 10]
         }
       ],
       "urls": [
@@ -50,10 +47,7 @@
           "url": "https://t.co/jzQFyvbgMM",
           "expanded_url": "https://twitter.com/i/web/status/1217403888216813568",
           "display_url": "twitter.com/i/web/status/1…",
-          "indices": [
-            117,
-            140
-          ]
+          "indices": [117, 140]
         }
       ]
     },
@@ -98,7 +92,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

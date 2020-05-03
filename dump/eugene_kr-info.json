@@ -39,30 +39,21 @@
           "name": "Michael Chernov",
           "id": 239279875,
           "id_str": "239279875",
-          "indices": [
-            0,
-            10
-          ]
+          "indices": [0, 10]
         },
         {
           "screen_name": "katellaevgenii",
           "name": "Evgeniy Katella",
           "id": 2900094743,
           "id_str": "2900094743",
-          "indices": [
-            11,
-            26
-          ]
+          "indices": [11, 26]
         },
         {
           "screen_name": "igrekde",
           "name": "Egor Tolstoy",
           "id": 181697598,
           "id_str": "181697598",
-          "indices": [
-            27,
-            35
-          ]
+          "indices": [27, 35]
         }
       ],
       "urls": [
@@ -70,10 +61,7 @@
           "url": "https://t.co/4IQMefQUtc",
           "expanded_url": "https://twitter.com/i/web/status/1169673107608678400",
           "display_url": "twitter.com/i/web/status/1…",
-          "indices": [
-            117,
-            140
-          ]
+          "indices": [117, 140]
         }
       ]
     },
@@ -115,7 +103,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

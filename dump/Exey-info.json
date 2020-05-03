@@ -14,10 +14,7 @@
           "url": "https://t.co/pVLac1Xmm2",
           "expanded_url": "http://exeypanteleev.com",
           "display_url": "exeypanteleev.com",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,10 +49,7 @@
           "name": "Олежа One♥️",
           "id": 2844856390,
           "id_str": "2844856390",
-          "indices": [
-            0,
-            11
-          ]
+          "indices": [0, 11]
         }
       ],
       "urls": []
@@ -101,7 +95,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

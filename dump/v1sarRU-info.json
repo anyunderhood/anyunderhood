@@ -39,30 +39,21 @@
           "name": "Mobius",
           "id": 3027882327,
           "id_str": "3027882327",
-          "indices": [
-            3,
-            14
-          ]
+          "indices": [3, 14]
         },
         {
           "screen_name": "e_matsyuk",
           "name": "Matzuk",
           "id": 211917597,
           "id_str": "211917597",
-          "indices": [
-            68,
-            78
-          ]
+          "indices": [68, 78]
         },
         {
           "screen_name": "v1sarRU",
           "name": "Dmitriy M.",
           "id": 274637746,
           "id_str": "274637746",
-          "indices": [
-            81,
-            89
-          ]
+          "indices": [81, 89]
         }
       ],
       "urls": [
@@ -70,10 +61,7 @@
           "url": "https://t.co/ONn5uV0IqV",
           "expanded_url": "https://youtu.be/q_8UUhVDV7c",
           "display_url": "youtu.be/q_8UUhVDV7c",
-          "indices": [
-            105,
-            128
-          ]
+          "indices": [105, 128]
         }
       ]
     },
@@ -102,20 +90,14 @@
             "name": "Matzuk",
             "id": 211917597,
             "id_str": "211917597",
-            "indices": [
-              52,
-              62
-            ]
+            "indices": [52, 62]
           },
           {
             "screen_name": "v1sarRU",
             "name": "Dmitriy M.",
             "id": 274637746,
             "id_str": "274637746",
-            "indices": [
-              65,
-              73
-            ]
+            "indices": [65, 73]
           }
         ],
         "urls": [
@@ -123,19 +105,13 @@
             "url": "https://t.co/ONn5uV0IqV",
             "expanded_url": "https://youtu.be/q_8UUhVDV7c",
             "display_url": "youtu.be/q_8UUhVDV7c",
-            "indices": [
-              89,
-              112
-            ]
+            "indices": [89, 112]
           },
           {
             "url": "https://t.co/aBferD7cUf",
             "expanded_url": "https://twitter.com/i/web/status/1176440526658297857",
             "display_url": "twitter.com/i/web/status/1…",
-            "indices": [
-              117,
-              140
-            ]
+            "indices": [117, 140]
           }
         ]
       },
@@ -186,7 +162,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

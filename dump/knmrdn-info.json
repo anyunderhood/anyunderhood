@@ -39,10 +39,7 @@
           "name": "Майя Вольф",
           "id": 1719668395,
           "id_str": "1719668395",
-          "indices": [
-            0,
-            9
-          ]
+          "indices": [0, 9]
         }
       ],
       "urls": []
@@ -85,7 +82,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

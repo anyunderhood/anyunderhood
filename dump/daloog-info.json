@@ -14,10 +14,7 @@
           "url": "https://t.co/nJE2b2ig6A",
           "expanded_url": "https://medium.com/@DAloG",
           "display_url": "medium.com/@DAloG",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,10 +49,7 @@
           "url": "https://t.co/is7IYe3Ytx",
           "expanded_url": "https://twitter.com/mobileunderhood/status/1168454829431230469",
           "display_url": "twitter.com/mobileunderhoo…",
-          "indices": [
-            46,
-            69
-          ]
+          "indices": [46, 69]
         }
       ]
     },
@@ -101,7 +95,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

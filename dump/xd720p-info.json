@@ -14,10 +14,7 @@
           "url": "https://t.co/np5yyKi7zD",
           "expanded_url": "http://mobileunderhood.ru",
           "display_url": "mobileunderhood.ru",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,28 +49,19 @@
           "url": "https://t.co/MwVTggcDi8",
           "expanded_url": "https://twitter.com/mobileunderhood/status/1255798578821251072",
           "display_url": "twitter.com/mobileunderhoo…",
-          "indices": [
-            21,
-            44
-          ]
+          "indices": [21, 44]
         },
         {
           "url": "https://t.co/HgzW2izZqK",
           "expanded_url": "https://twitter.com/mobileunderhood/status/1256150594173022211",
           "display_url": "twitter.com/mobileunderhoo…",
-          "indices": [
-            73,
-            96
-          ]
+          "indices": [73, 96]
         },
         {
           "url": "https://t.co/QIUt27InZt",
           "expanded_url": "https://twitter.com/i/web/status/1256502178899845121",
           "display_url": "twitter.com/i/web/status/1…",
-          "indices": [
-            117,
-            140
-          ]
+          "indices": [117, 140]
         }
       ]
     },
@@ -119,7 +107,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

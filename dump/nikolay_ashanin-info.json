@@ -25,10 +25,7 @@
           "url": "https://t.co/Ag2GHKxhb1",
           "expanded_url": "https://medium.com/@nvashanin",
           "display_url": "medium.com/@nvashanin",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -63,10 +60,7 @@
           "url": "https://t.co/uZnM1LZhbP",
           "expanded_url": "https://twitter.com/i/web/status/1160863864478687232",
           "display_url": "twitter.com/i/web/status/1…",
-          "indices": [
-            121,
-            144
-          ]
+          "indices": [121, 144]
         }
       ]
     },
@@ -110,7 +104,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

@@ -39,10 +39,7 @@
           "name": "Android Developers",
           "id": 93711247,
           "id_str": "93711247",
-          "indices": [
-            3,
-            14
-          ]
+          "indices": [3, 14]
         }
       ],
       "urls": []
@@ -72,10 +69,7 @@
             "url": "https://t.co/k0mn3VMoi6",
             "expanded_url": "https://twitter.com/i/web/status/996083332650885120",
             "display_url": "twitter.com/i/web/status/9…",
-            "indices": [
-              116,
-              139
-            ]
+            "indices": [116, 139]
           }
         ]
       },
@@ -125,7 +119,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

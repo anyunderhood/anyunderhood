@@ -39,30 +39,21 @@
           "name": "AppsConfRussia",
           "id": 985839982836441100,
           "id_str": "985839982836441088",
-          "indices": [
-            3,
-            18
-          ]
+          "indices": [3, 18]
         },
         {
           "screen_name": "apps_cast",
           "name": "AppsCast",
           "id": 1134012678463283200,
           "id_str": "1134012678463283200",
-          "indices": [
-            64,
-            74
-          ]
+          "indices": [64, 74]
         },
         {
           "screen_name": "alexchernyy",
           "name": "Alexander Chernyy",
           "id": 89699862,
           "id_str": "89699862",
-          "indices": [
-            89,
-            101
-          ]
+          "indices": [89, 101]
         }
       ],
       "urls": []
@@ -92,20 +83,14 @@
             "name": "AppsCast",
             "id": 1134012678463283200,
             "id_str": "1134012678463283200",
-            "indices": [
-              44,
-              54
-            ]
+            "indices": [44, 54]
           },
           {
             "screen_name": "alexchernyy",
             "name": "Alexander Chernyy",
             "id": 89699862,
             "id_str": "89699862",
-            "indices": [
-              69,
-              81
-            ]
+            "indices": [69, 81]
           }
         ],
         "urls": [
@@ -113,10 +98,7 @@
             "url": "https://t.co/nZzfDnylf4",
             "expanded_url": "https://twitter.com/i/web/status/1169604015237337088",
             "display_url": "twitter.com/i/web/status/1…",
-            "indices": [
-              117,
-              140
-            ]
+            "indices": [117, 140]
           }
         ]
       },
@@ -167,7 +149,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

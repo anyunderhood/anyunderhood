@@ -39,10 +39,7 @@
           "name": "OSHEV",
           "id": 285457287,
           "id_str": "285457287",
-          "indices": [
-            0,
-            13
-          ]
+          "indices": [0, 13]
         }
       ],
       "urls": [
@@ -50,10 +47,7 @@
           "url": "https://t.co/zwO91QRALp",
           "expanded_url": "https://twitter.com/i/web/status/1170405104018763778",
           "display_url": "twitter.com/i/web/status/1…",
-          "indices": [
-            116,
-            139
-          ]
+          "indices": [116, 139]
         }
       ]
     },
@@ -96,7 +90,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "regular",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

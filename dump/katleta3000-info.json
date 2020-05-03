@@ -14,10 +14,7 @@
           "url": "https://t.co/ai3Qsb5xGF",
           "expanded_url": "http://hourly-app.com",
           "display_url": "hourly-app.com",
-          "indices": [
-            90,
-            113
-          ]
+          "indices": [90, 113]
         }
       ]
     }
@@ -49,10 +46,7 @@
           "name": "Михаил Рубанов",
           "id": 1101242563,
           "id_str": "1101242563",
-          "indices": [
-            3,
-            14
-          ]
+          "indices": [3, 14]
         }
       ],
       "urls": [
@@ -60,10 +54,7 @@
           "url": "https://t.co/xWpkfy46Cy",
           "expanded_url": "https://habr.com/ru/company/dodopizzadev/blog/481200/",
           "display_url": "habr.com/ru/company/dod…",
-          "indices": [
-            112,
-            135
-          ]
+          "indices": [112, 135]
         }
       ]
     },
@@ -92,10 +83,7 @@
             "url": "https://t.co/xWpkfy46Cy",
             "expanded_url": "https://habr.com/ru/company/dodopizzadev/blog/481200/",
             "display_url": "habr.com/ru/company/dod…",
-            "indices": [
-              96,
-              119
-            ]
+            "indices": [96, 119]
           }
         ]
       },
@@ -149,7 +137,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

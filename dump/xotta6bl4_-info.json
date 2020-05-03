@@ -14,10 +14,7 @@
           "url": "https://t.co/S1UiJVyZUT",
           "expanded_url": "http://devindi.com",
           "display_url": "devindi.com",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -70,22 +67,10 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [
-              24.5501404,
-              59.3518286
-            ],
-            [
-              24.9262886,
-              59.3518286
-            ],
-            [
-              24.9262886,
-              59.4981855
-            ],
-            [
-              24.5501404,
-              59.4981855
-            ]
+            [24.5501404, 59.3518286],
+            [24.9262886, 59.3518286],
+            [24.9262886, 59.4981855],
+            [24.5501404, 59.4981855]
           ]
         ]
       },
@@ -123,7 +108,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

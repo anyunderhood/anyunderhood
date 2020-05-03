@@ -39,40 +39,28 @@
           "name": "Богдан Руденко",
           "id": 1285670024,
           "id_str": "1285670024",
-          "indices": [
-            0,
-            7
-          ]
+          "indices": [0, 7]
         },
         {
           "screen_name": "nifl_heim",
           "name": "Michael Chernov",
           "id": 239279875,
           "id_str": "239279875",
-          "indices": [
-            8,
-            18
-          ]
+          "indices": [8, 18]
         },
         {
           "screen_name": "katellaevgenii",
           "name": "Evgeniy Katella",
           "id": 2900094743,
           "id_str": "2900094743",
-          "indices": [
-            19,
-            34
-          ]
+          "indices": [19, 34]
         },
         {
           "screen_name": "igrekde",
           "name": "Egor Tolstoy",
           "id": 181697598,
           "id_str": "181697598",
-          "indices": [
-            35,
-            43
-          ]
+          "indices": [35, 43]
         }
       ],
       "urls": []
@@ -115,7 +103,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

@@ -14,10 +14,7 @@
           "url": "https://t.co/XGagR9diFx",
           "expanded_url": "https://www.facebook.com/AllZimin",
           "display_url": "facebook.com/AllZimin",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,10 +49,7 @@
         {
           "id": 1170735591861997600,
           "id_str": "1170735591861997573",
-          "indices": [
-            38,
-            61
-          ],
+          "indices": [38, 61],
           "media_url": "http://pbs.twimg.com/media/ED9J0WbXUAUjRvm.jpg",
           "media_url_https": "https://pbs.twimg.com/media/ED9J0WbXUAUjRvm.jpg",
           "url": "https://t.co/mmqcSzVXSS",
@@ -92,10 +86,7 @@
         {
           "id": 1170735591861997600,
           "id_str": "1170735591861997573",
-          "indices": [
-            38,
-            61
-          ],
+          "indices": [38, 61],
           "media_url": "http://pbs.twimg.com/media/ED9J0WbXUAUjRvm.jpg",
           "media_url_https": "https://pbs.twimg.com/media/ED9J0WbXUAUjRvm.jpg",
           "url": "https://t.co/mmqcSzVXSS",
@@ -128,10 +119,7 @@
         {
           "id": 1170735591807488000,
           "id_str": "1170735591807488000",
-          "indices": [
-            38,
-            61
-          ],
+          "indices": [38, 61],
           "media_url": "http://pbs.twimg.com/media/ED9J0WOXkAAJi6R.jpg",
           "media_url_https": "https://pbs.twimg.com/media/ED9J0WOXkAAJi6R.jpg",
           "url": "https://t.co/mmqcSzVXSS",
@@ -164,10 +152,7 @@
         {
           "id": 1170735591845179400,
           "id_str": "1170735591845179392",
-          "indices": [
-            38,
-            61
-          ],
+          "indices": [38, 61],
           "media_url": "http://pbs.twimg.com/media/ED9J0WXWsAAbqAs.jpg",
           "media_url_https": "https://pbs.twimg.com/media/ED9J0WXWsAAbqAs.jpg",
           "url": "https://t.co/mmqcSzVXSS",
@@ -239,7 +224,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

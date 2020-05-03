@@ -14,10 +14,7 @@
           "url": "https://t.co/zXfx6DwWBU",
           "expanded_url": "https://medium.com/@dzigorium",
           "display_url": "medium.com/@dzigorium",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,10 +49,7 @@
           "name": "Alexey Navalny",
           "id": 82299300,
           "id_str": "82299300",
-          "indices": [
-            3,
-            11
-          ]
+          "indices": [3, 11]
         }
       ],
       "urls": []
@@ -85,10 +79,7 @@
             "url": "https://t.co/9pLLwH94sb",
             "expanded_url": "https://twitter.com/i/web/status/1170597903351590912",
             "display_url": "twitter.com/i/web/status/1…",
-            "indices": [
-              117,
-              140
-            ]
+            "indices": [117, 140]
           }
         ]
       },
@@ -138,7 +129,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

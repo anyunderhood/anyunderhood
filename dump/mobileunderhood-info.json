@@ -25,10 +25,7 @@
           "url": "https://t.co/np5yyK0wb3",
           "expanded_url": "http://mobileunderhood.ru",
           "display_url": "mobileunderhood.ru",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -99,7 +96,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

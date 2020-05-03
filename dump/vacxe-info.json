@@ -39,19 +39,13 @@
           "url": "http://t.co/U9LN3FP6Vn",
           "expanded_url": "http://in.philafirst-sodop.com/c-979894.php",
           "display_url": "in.philafirst-sodop.com/c-979894.php",
-          "indices": [
-            0,
-            22
-          ]
+          "indices": [0, 22]
         },
         {
           "url": "http://t.co/q3TanRFsDk",
           "expanded_url": "http://in.philafirst-sodop.com/c-778362.php",
           "display_url": "in.philafirst-sodop.com/c-778362.php",
-          "indices": [
-            61,
-            83
-          ]
+          "indices": [61, 83]
         }
       ]
     },
@@ -94,7 +88,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

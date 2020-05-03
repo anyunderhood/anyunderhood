@@ -14,10 +14,7 @@
           "url": "https://t.co/KrY1tWI7M6",
           "expanded_url": "http://andrey-mishanin.ru/",
           "display_url": "andrey-mishanin.ru",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,10 +49,7 @@
           "name": "Мобильный разработчик",
           "id": 1056195982340358100,
           "id_str": "1056195982340358150",
-          "indices": [
-            0,
-            16
-          ]
+          "indices": [0, 16]
         }
       ],
       "urls": [
@@ -63,10 +57,7 @@
           "url": "https://t.co/ddasMXsnyE",
           "expanded_url": "https://twitter.com/i/web/status/1169570947675893762",
           "display_url": "twitter.com/i/web/status/1…",
-          "indices": [
-            117,
-            140
-          ]
+          "indices": [117, 140]
         }
       ]
     },
@@ -109,7 +100,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0

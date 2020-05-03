@@ -14,10 +14,7 @@
           "url": "https://t.co/dAXp8nlFy8",
           "expanded_url": "http://stepango.com",
           "display_url": "stepango.com",
-          "indices": [
-            0,
-            23
-          ]
+          "indices": [0, 23]
         }
       ]
     },
@@ -52,10 +49,7 @@
           "name": "Hadi Hariri",
           "id": 15797140,
           "id_str": "15797140",
-          "indices": [
-            3,
-            11
-          ]
+          "indices": [3, 11]
         }
       ],
       "urls": [
@@ -63,10 +57,7 @@
           "url": "https://t.co/Mt2PmYxyHB",
           "expanded_url": "https://www.jetbrains.com/lp/mono/",
           "display_url": "jetbrains.com/lp/mono/",
-          "indices": [
-            102,
-            125
-          ]
+          "indices": [102, 125]
         }
       ]
     },
@@ -95,10 +86,7 @@
             "url": "https://t.co/Mt2PmYxyHB",
             "expanded_url": "https://www.jetbrains.com/lp/mono/",
             "display_url": "jetbrains.com/lp/mono/",
-            "indices": [
-              89,
-              112
-            ]
+            "indices": [89, 112]
           }
         ]
       },
@@ -152,7 +140,6 @@
   "follow_request_sent": false,
   "notifications": false,
   "translator_type": "none",
-  "time_zone_offset": 0,
   "geometry": {
     "lat": 0,
     "lng": 0
