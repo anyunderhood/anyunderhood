@@ -3,10 +3,7 @@
     include menu
 
   p.container
-    a(href="https://twitter.com/iamstarkov") @iamstarkov
-    = " c любовью разработал"
     span.hidden-xs
-      =", "
+      ="Куратор проекта: "
     br.visible-xs
-    a(href="https://twitter.com/suxxes") @suxxes
-    = " бережно доработал и курирует авторов"
+    a(href="https://twitter.com/"+curator.twitter)="@"+curator.twitter

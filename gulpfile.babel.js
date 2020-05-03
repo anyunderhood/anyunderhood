@@ -27,7 +27,7 @@ import webpackConfig from './webpack.config.babel.js';
 import authorRender from './helpers/author-render';
 import bust from './helpers/bust';
 import lastUpdated from './helpers/last-updated';
-import { site, underhood } from './underhood';
+import { site, underhood, githubRepo, githubUser, curatorTwitter } from './underhood';
 import replaceMd from './helpers/replace-md';
 
 import authors from './helpers/input-authors';
@@ -39,6 +39,13 @@ const jadeDefaults = {
     site,
     latestInfo,
     underhoodName: underhood,
+    github: {
+        user: githubUser,
+        repo: githubRepo
+    },
+    curator: {
+        twitter: curatorTwitter
+    },
     numbers: (input) => numbers(input, { locale: 'ru' }),
     people: numd('человек', 'человека', 'человек'),
   },
