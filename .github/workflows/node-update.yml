@@ -19,14 +19,25 @@ jobs:
       - name: Pull Request Comment Trigger
         uses: Khan/pull-request-comment-trigger@1.0.0
         with:
-          # The emoji "reaction" to put on the comment to indicate that the trigger was detected. For example, "rocket"
-          reaction: "rocket"
-          # The string to look for in pull-request descriptions and comments. For example "#build/android"
           trigger: "#update"
       - uses: actions/checkout@v2
+        with:
+           persist-credentials: false
+           fetch-depth: 0
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run update
+        env:
+          TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
+          TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+          TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN_KEY }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+      - run: echo ${{ github }}
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
