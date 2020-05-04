@@ -26,11 +26,9 @@ jobs:
     - name: GitHub Push
       uses: ad-m/github-push-action@ad-m-patch-1
       with:
-        # Token for the repo. Can be passed in using  $\{{ secrets.GITHUB_TOKEN }}
         github_token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
-        # Repositoryname to push. Default or empty value represents current github repository (${GITHUB_REPOSITORY})
         repository: anyunderhood/anyunderhood.github.io
+        branch: gh-pages
         force: true
-        # Directory to change to before pushing.
         directory: dist
     
