@@ -38,7 +38,8 @@ const update = (author, maxId) => {
     }
   );
 
-  getInfo(tokens, underhood).then(info => {
+  getInfo(tokens, underhood, (err, info) => {
+    if (err) throw err;
     saveAuthorArea(authorId, 'info', info);
   });
 
