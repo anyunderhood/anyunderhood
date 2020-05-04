@@ -2,9 +2,9 @@ name: Author update
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, edited]
   issue_comment:
-    types: [created]
+    types: [created, edited]
 
 jobs:
   build:
