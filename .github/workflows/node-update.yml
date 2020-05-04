@@ -21,9 +21,6 @@ jobs:
         with:
           trigger: "#update"
       - uses: actions/checkout@v2
-        with:
-           persist-credentials: false
-           fetch-depth: 0
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -35,15 +32,17 @@ jobs:
           TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
           TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN_KEY }}
           TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-      - run: echo ${{ github }}
+      - run: git add .
+      - run: git commit -m 'Update of authors happened'
+      - run: git push origin
 #       - name: GitHub Push
 #         uses: ad-m/github-push-action@v0.5.0
 #         with:
 #           github_token: ${{ secrets.GITHUB_TOKEN }}
 #           branch: ${{ github.head_ref }}
-      - name: Push changes
-        uses: actions-go/push@v1
-        with:
+#       - name: Push changes
+#         uses: actions-go/push@v1
+#         with:
           # Override the existing remote branch if it already exist
 #           force: # optional
           # The email that will appear in commits when changes needs to be committed
@@ -57,7 +56,7 @@ jobs:
           # The commit message used when changes needs to be committed
 #           commit-message: 
           # The name of the local reference to push.
-          ref: ${{ github.head_ref }} # optional, default is ${{ github.ref }}
+#           ref: ${{ github.head_ref }} # optional, default is ${{ github.ref }}
           # The name of the remote on which to push the changes. Defaults to the tracked remote
 #           remote: # optional, default is origin
           # The name of the remote reference to pushto. Defaults to the tracked remote branch.
