@@ -36,8 +36,8 @@ jobs:
       - run: git config --local user.email "???"
       - run: git config --local user.name "anyunderhood"
       - run: git commit -m 'Update of authors happened'
-      - run: git switch -c ${{ github.head_ref }}
-      - run: git push origin
+#       - run: git switch -c ${{ github.head_ref }}
+      - run: git push # origin
 #       - name: GitHub Push
 #         uses: ad-m/github-push-action@v0.5.0
 #         with:
