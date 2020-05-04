@@ -33,6 +33,8 @@ jobs:
           TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN_KEY }}
           TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
       - run: git add .
+      - run: git config --local user.email "???"
+      - run: git config --local user.name "anyunderhood"
       - run: git commit -m 'Update of authors happened'
       - run: git push origin
 #       - name: GitHub Push
